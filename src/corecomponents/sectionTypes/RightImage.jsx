@@ -10,7 +10,7 @@ const RightImage = ({paragraphtext, imgsrc}) => {
         <p>{paragraphtext} </p>
       </Col>
       <Col md={6}>
-        <Image src={imgsrc}  fluid className='borderNone bgTransparent vert-move img-fluid'/>
+        <Image src={imgsrc}  fluid className='borderNone bgTransparent vert-move img-fluid w100'/>
       </Col>
     </Row>
   </Container>

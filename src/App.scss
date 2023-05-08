@@ -2359,6 +2359,20 @@ footer.web_footer {
 	}
 }
 
+@media (max-width:641px) {
+	.headtxt{
+		// padding-top: 12px!important;
+		position: absolute;
+		top: 80px;
+		display: none;
+	}
+	.headtxt2{
+		// padding-top: 12px!important;
+		position: absolute;
+		top: -55px;
+	}
+}
+
 /* ==========formHelp start========== */
 .input-group.formHelp {
 	background: var(--whitecolor);
@@ -7070,6 +7084,10 @@ img.vert-move {
 
 .transformNormal {
 	transform: translate(0px, 28px) !important;
+}
+
+.w100 {
+	width: 100% !important;
 }
 
 /*=========== {___line-height styling___} ===========*/

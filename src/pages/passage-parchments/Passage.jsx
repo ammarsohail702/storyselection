@@ -1,12 +1,12 @@
 import React from 'react'
-import HeroSection from './components/HeroSection'
+import Header from '../../corecomponents/include/Header'
 import RightImage from '../../corecomponents/sectionTypes/RightImage'
-import ProductSection from '../../corecomponents/sectionTypes/ProductSection'
 import LeftImage from '../../corecomponents/sectionTypes/LeftImage'
-import SingupNewsletter from '../../corecomponents/include/SingupNewsletter'
+import ProductSection from '../../corecomponents/sectionTypes/ProductSection'
+import ImageinCenter from '../../corecomponents/sectionTypes/ImageinCenter'
 import VideoInCenter from '../../corecomponents/sectionTypes/VideoInCenter'
 
-const Home = () => {
+const Passage = () => {
     const p= `The story of Decem Tribus Mirabilis revolves around ten tribes, each with unique special elements that allow them to produce synthetic vials for their survival. These tribes are in search of the Vial of Life, an artifact that can grant eternal life, and they compete to find it.
 
     As the tribes journey through different lands and encounter various obstacles, they realize that working together may increase their chances of success. However, trust is difficult to establish as each tribe is also guarding their synthetic vials, which hold great value to them.
@@ -26,36 +26,44 @@ const Home = () => {
    const imgsrc='https://img1.wsimg.com/isteam/ip/25ef4dc2-8044-476f-8a13-fb457c37414f/unnamed.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true'
   return (
     <div>
-        <HeroSection/>
-        <section className='lightblackbg'>
-
-        <RightImage paragraphtext={p} imgsrc={imgsrc}/>
-        </section>
-        <section className='lightblackbg'>
-
-        <ProductSection/>
-        </section>
-
-        <section className='blackbg'>
-
-        <RightImage paragraphtext={p} imgsrc={imgsrc}/>
-        </section>
-
-        <section className='lightblackbg'>
-
-        <ProductSection/>
-        </section>
-
-        <section className='lightblackbg'>
+      {/* <Header/> */}
+        <section className='bg-dark'>
 
         <LeftImage paragraphtext={p} imgsrc={imgsrc}/>
         </section>
-        
-        <SingupNewsletter/>
-        <VideoInCenter/>
+
+        <section className='bg-dark'>
+
+<ProductSection description={true} numberofProductsinRow={3}/>
+</section>
+
+<section className='lightblackbg'>
+    <ImageinCenter/>
+
+</section>
+
+<section className='lightblackbg'>
+    <ImageinCenter/>
+
+</section>
+
+<section className='lightblackbg'>
+    <VideoInCenter/>
+
+</section>
+
+<section className='lightblackbg'>
+    <ImageinCenter image={'https://img1.wsimg.com/isteam/ip/25ef4dc2-8044-476f-8a13-fb457c37414f/Asset%203.png/:/rs=w:2480,h:1240,cg:true,m/cr=w:2480,h:1240'} description={false}/>
+</section>
+
+
+<section className='lightblackbg'>
+
+<ProductSection description={true} numberofProductsinRow={3}/>
+</section>
 
     </div>
   )
 }
 
-export default Home
+export default Passage

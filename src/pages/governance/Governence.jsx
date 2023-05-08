@@ -1,12 +1,10 @@
 import React from 'react'
-import HeroSection from './components/HeroSection'
 import RightImage from '../../corecomponents/sectionTypes/RightImage'
-import ProductSection from '../../corecomponents/sectionTypes/ProductSection'
+import Header from '../../corecomponents/include/Header'
 import LeftImage from '../../corecomponents/sectionTypes/LeftImage'
-import SingupNewsletter from '../../corecomponents/include/SingupNewsletter'
-import VideoInCenter from '../../corecomponents/sectionTypes/VideoInCenter'
 
-const Home = () => {
+const Governence = () => {
+
     const p= `The story of Decem Tribus Mirabilis revolves around ten tribes, each with unique special elements that allow them to produce synthetic vials for their survival. These tribes are in search of the Vial of Life, an artifact that can grant eternal life, and they compete to find it.
 
     As the tribes journey through different lands and encounter various obstacles, they realize that working together may increase their chances of success. However, trust is difficult to establish as each tribe is also guarding their synthetic vials, which hold great value to them.
@@ -23,39 +21,23 @@ const Home = () => {
     
     In the end, the tribes realize that cooperation and mutual benefit are more valuable than the Vial of Life itself. They agree to share the Vial and establish a new society based on collaboration and respect for each other's unique elements. The Vial of Life becomes a symbol of their unity and the power of working together towards a common goal.`
 
-   const imgsrc='https://img1.wsimg.com/isteam/ip/25ef4dc2-8044-476f-8a13-fb457c37414f/unnamed.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true'
+   const imgsrc='https://img1.wsimg.com/isteam/ip/25ef4dc2-8044-476f-8a13-fb457c37414f/10%20tribes.png/:/'
+
   return (
     <div>
-        <HeroSection/>
+      {/* <Header/> */}
+        {/* <HeroSection/> */}
         <section className='lightblackbg'>
 
-        <RightImage paragraphtext={p} imgsrc={imgsrc}/>
-        </section>
-        <section className='lightblackbg'>
-
-        <ProductSection/>
-        </section>
-
-        <section className='blackbg'>
-
-        <RightImage paragraphtext={p} imgsrc={imgsrc}/>
-        </section>
-
-        <section className='lightblackbg'>
-
-        <ProductSection/>
+        <LeftImage paragraphtext={p} imgsrc={imgsrc}/>
         </section>
 
         <section className='lightblackbg'>
 
         <LeftImage paragraphtext={p} imgsrc={imgsrc}/>
         </section>
-        
-        <SingupNewsletter/>
-        <VideoInCenter/>
-
     </div>
   )
 }
 
-export default Home
+export default Governence

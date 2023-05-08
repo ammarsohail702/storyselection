@@ -11,8 +11,8 @@ const HeroSection = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3 className='text-white fontsize50'>DAOs and Storytelling:</h3>
-          <p className='text-white fontsize50 mt-5 line-height16px'>A Match Made in Decentralized Heaven</p>
+          <h3 className='text-white fontsize34 headtxt'>DAOs and Storytelling:</h3>
+          <p className='text-white fontsize34 mt-5 line-height17px headtxt2'>A Match Made in Decentralized Heaven</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

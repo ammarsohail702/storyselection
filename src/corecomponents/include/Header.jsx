@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -14,13 +15,13 @@ const Header = () => {
         <Nav className="me-auto">
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">HOME</Nav.Link>
+          <Nav.Link href="#deets"> <Link to={'/'} className='text-white'>HOME</Link></Nav.Link>
           <Nav.Link eventKey={2} href="#memes">
-          PASSAGE PARCHMENTS
+          <Link to={'/passage-parchments'} className='text-white'>PASSAGE PARCHMENTS</Link>
           </Nav.Link>
-          <Nav.Link href="#features">GOVERNANCE & RECRIPROCOIN</Nav.Link>
-          <Nav.Link href="#pricing">WRITERS /ARTIST</Nav.Link>
-          <NavDropdown title="MORE" id="collasible-nav-dropdown">
+          <Nav.Link href="#features"><Link to={'/governence'} className='text-white'>GOVERNANCE & RECRIPROCOIN</Link></Nav.Link>
+          <Nav.Link href="#pricing" className='text-white'>WRITERS /ARTIST</Nav.Link>
+          <NavDropdown title="MORE" id="collasible-nav-dropdown" className='text-white'>
             <NavDropdown.Item href="#action/3.1">Whitepaper</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               DAO (MEMBERS ONLY)
